@@ -1,18 +1,20 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
 const config = require('config');
 const path = require('path');
+const messages = require('./routes/api/messages');
 
 let app = express();
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.json());
 
 const db = config.get('mongoURI');
 
 mongoose.connect(db, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
 .then(() => console.log('MongoDB Connected'))
 .catch(err => console.log(err));
+
+app.use('/api/messages', messages);
 
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static('client/dist'));
