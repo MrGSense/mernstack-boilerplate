@@ -7,5 +7,6 @@ MERN stack boilerplate using my react-start-boilerplate for Front End
 4. Cd into client
 5. Use npm i to install modules on the client-side
 6. Now use npm start to run the development server and start building your react application
+7. Use npm run build to build your application for deployment
 ### Remember
 Remove .gitignore in both the server-side and client-side so you can deploy your app
