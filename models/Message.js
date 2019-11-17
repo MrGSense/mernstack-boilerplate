@@ -13,10 +13,6 @@ const MessageSchema = new Schema({
     postdate: {
         type: Date,
         default: Date.now
-    },
-    likes: {
-        type: Number,
-        default: 0
     }
 });
 
