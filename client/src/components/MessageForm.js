@@ -36,16 +36,16 @@ class MessageForm extends Component{
 
     render() {
         return (
-            <div className="NewMessage">
-                <h1>Submit A New Message</h1>
-                <form className="MessageForm" onSubmit={this.onSubmit}>
-                    <div className="NameInput">
-                        <label>Name: </label>
-                        <input type="text" name="name" id="name" onChange={this.onChange}></input>
+            <div className="MessageForm">
+                <h1 className="MessageForm__title">Submit A New Message</h1>
+                <form className="MessageForm__form" onSubmit={this.onSubmit}>
+                    <div className="MessageForm__name">
+                        <label className="MessageForm__name-label">Name: </label>
+                        <input className="MessageForm__name-input" type="text" name="name" id="name" onChange={this.onChange}></input>
                     </div>
-                    <div className="MessageInput">
-                        <label>Message: </label>
-                        <input type="text" name="message" id="message" onChange={this.onChange}></input>
+                    <div className="MessageForm__message">
+                        <label className="MessageForm__message-label">Message: </label>
+                        <input className="MessageForm__message-input" type="text" name="message" id="message" onChange={this.onChange}></input>
                     </div>
                     <button className="FormSubmission">Submit</button>
                 </form>

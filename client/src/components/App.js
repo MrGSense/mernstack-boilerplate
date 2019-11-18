@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MessageForm from './MessageForm';
 import MessageList from './MessageList';
+import './styles/app.css';
 
 class App extends Component {
     render() {

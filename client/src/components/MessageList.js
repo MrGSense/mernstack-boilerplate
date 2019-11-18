@@ -26,7 +26,7 @@ class MessageList extends Component {
     render() {
         return (
             <div className="MessageList">
-                <h1>Message List</h1>
+                <h1 className="MessageList__title">Message List</h1>
                 
                 {this.state.messages.reverse().map(message => 
                     <Message key={message._id} name={message.name} message={message.message} />
