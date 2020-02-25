@@ -2,7 +2,7 @@
 MERN stack boilerplate using my react-start-boilerplate for Front End
 ## Usage
 1. Use npm i to install modules on the server-side
-2. Create a config folder and then create a default.json and add your mongoURI there to connect to Mongo
+2. Create a config folder and then create a dev.js and add your mongoURI there to connect to Mongo
 3. Now use npm start to run the server
 4. Cd into client
 5. Use npm i to install modules on the client-side
