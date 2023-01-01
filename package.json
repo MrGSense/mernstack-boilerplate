@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/MrGSense/mernstack-boilerplate#readme",
   "dependencies": {
-    "config": "^3.2.4",
+    "config": "^3.3.8",
     "express": "^4.17.1",
     "mongoose": "^5.7.11"
   }
